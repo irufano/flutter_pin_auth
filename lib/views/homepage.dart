@@ -8,8 +8,14 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Home Page'),
+        backgroundColor: Colors.deepPurple,
+      ),
+      body: Center(
+        child: Text('This is Home Page after PIN authentication'),
+      ),
     );
   }
 }
